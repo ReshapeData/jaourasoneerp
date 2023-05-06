@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1680837191391.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2023B274",
+    "lastKnownWriteTime" : 1680838070,
+    "last_content_update" : 1680838070097,
+    "path" : "~/01_jaour_ASoneERP/肖桃的示例.R",
+    "project_path" : "肖桃的示例.R",
+    "properties" : {
+        "cursorPosition" : "23,24",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

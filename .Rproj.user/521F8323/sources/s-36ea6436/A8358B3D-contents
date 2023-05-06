@@ -1,0 +1,48 @@
+menu_column <- tabItem(tabName = "column",
+                       fluidRow(
+                         column(width = 4,
+                                box(
+                                  title = "出口报关单", width = NULL, solidHeader = TRUE, status = "primary",
+                                  tsui::uiTemplate(templateName ='出口报关模板')
+                                ),
+                                box(
+                                  title = "Title 2", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                ),
+                                box(
+                                  title = "Title 3", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                )
+                         ),
+                         
+                         column(width = 4,
+                                box(
+                                  title = "Title 4", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                ),
+                                box(
+                                  title = "Title 5", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                ),
+                                box(
+                                  title = "Title 6", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                )
+                         ),
+                         
+                         column(width=4,
+                                box(
+                                  title = "Title 7", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                ),
+                                box(
+                                  title = "Title 8", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                ),
+                                box(
+                                  title = "Title 9", width = NULL, solidHeader = TRUE, status = "primary",
+                                  "Box content"
+                                )
+                         )
+                       )
+)

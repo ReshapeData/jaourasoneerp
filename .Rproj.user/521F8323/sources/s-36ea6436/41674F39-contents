@@ -1,0 +1,8 @@
+Sys.Date()
+
+typeof(Sys.Date())
+# c
+format(Sys.Date(),"%Y-%m-%d")
+format(121434321,"%Y-%m-%d")
+
+as.Date(double(1547769600))

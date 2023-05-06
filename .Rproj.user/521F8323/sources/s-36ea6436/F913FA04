@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1680269208433.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F913FA04",
+    "lastKnownWriteTime" : 1683265196,
+    "last_content_update" : 1683265196,
+    "path" : "~/01_jaour_ASoneERP/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+        "cursorPosition" : "78,7",
+        "scrollLine" : "72"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

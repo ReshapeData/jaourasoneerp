@@ -1,0 +1,14 @@
+
+
+  #预览功能处理 begin----
+  var_file_Asone_upload = tsui::var_file('file_Asone_upload')
+  print(var_file_Asone_upload)
+  #预览功能处理 end----
+  
+  
+  
+  
+})
+  if (x % 2 == 0) {
+    print("x is even")
+  }

@@ -1,0 +1,6 @@
+
+library(readxl)
+外管模板 <- read_excel("www/外管模板.xlsx", 
+                   col_types = c("text", "text", "text", 
+                                 "text", "date", "numeric"))
+View(外管模板)

@@ -1,0 +1,49 @@
+menu_row <- tabItem(tabName = "row",
+                    fluidRow(
+                      column(width = 4,
+                             box(
+                               title = "外管数据上传", width = NULL, solidHeader = TRUE, status = "primary",
+                               # tsui::uiTemplate(templateName = '嘉好外管模板’)
+                               # 
+                             ),
+                             box(
+                               title = "X001", width = NULL, solidHeader = TRUE, status = "primary",
+                               "Box content"
+                             ),
+                             box(
+                               title = "X002", width = NULL, solidHeader = TRUE, status = "primary",
+                               "Box content"
+                             )
+                      ),
+                      
+                      # column(width = 4,
+                      #        box(
+                      #          title = "Title 1", width = NULL, solidHeader = TRUE, status = "primary",
+                      #          "Box content"
+                      #        ),
+                      #        box(
+                      #          title = "Title 1", width = NULL, solidHeader = TRUE, status = "primary",
+                      #          "Box content"
+                      #        ),
+                      #        box(
+                      #          title = "Title 1", width = NULL, solidHeader = TRUE, status = "primary",
+                      #          "Box content"
+                      #        )
+                      # ),
+                      
+                      column(width=8,
+                             box(
+                               title = "Y001", width = NULL, solidHeader = TRUE, status = "primary",
+                               "Box content"
+                             ),
+                             box(
+                               title = "Y002", width = NULL, solidHeader = TRUE, status = "primary",
+                               "Box content"
+                             ),
+                             box(
+                               title = "Y003", width = NULL, solidHeader = TRUE, status = "primary",
+                               "Box content"
+                             )
+                      )
+                    )
+)

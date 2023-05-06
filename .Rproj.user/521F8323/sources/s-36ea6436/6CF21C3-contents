@@ -1,0 +1,81 @@
+
+
+#shinyserver start point----
+ shinyServer(function(input, output,session) {
+   
+   
+   #预览功能处理 begin----
+    var_file_Asone_upload = tsui::var_file('file_Asone_upload')
+    #新增功能
+    print('var_file_Asone_upload')
+
+    #
+    shiny::observeEvent(input$btn_Asone_preview,{
+      print('you click me!')
+      file_name =  var_file_Asone_upload()
+      data <-readxl::read_excel(file_name)
+      #print(data)
+      #显示给用户看
+      tsui::run_dataTable2(id='dt_Asone_baseInfo',data=data)
+      #tsui::run_dataTable2(id = 'dt_Export_baseInfo,data =data )
+      
+      #上传至数据库BEGIN----
+      # jaour  taoken = 'F91CF3E3-8962-47F2-823F-C5CCAAFC66CA'
+      # ar_rece_update_info
+      # FSETTLENO
+      # F_KD_SETTLENO
+      # F_KD_OUTHUBDATE
+      # F_KD_OUTAMOUNT
+      # FBILLNO
+      
+      #示例一，数据库查询 
+      # sql = "SELECT TOP (1000) [fname]      ,[fage]  FROM  [t_test]"         
+      # data = tsda::sql_select2(token = '75CE5B94-38F1-40F6-9B7B-9B4170C8E5F6',sql = sql)         
+      # tsui::run_dataTable2(id = 'dt_Asone_baseInfo',data =data ) 
+      
+      # 示例一结束 
+      
+      #示例二，数据库写入    
+      #tsda::db_writeTable2(token='75CE5B94-38F1-40F6-9B7B-9B4170C8E5F6',table_name ='t_test',r_object = data,append = TRUE )
+      #示例二 结束 
+      
+      # 示例三 分页上传
+      
+      # ncount = nrow(data)
+      # page_info = tsdo::paging_setting(ncount,10)
+      # page_info
+      # batch = nrow(page_info)
+      # for (i in 1:batch) {
+      #    start = page_info$FStart[i]
+      #    end =page_info$FEnd[i]
+      #    item =data[start:end,  ]
+      #    #print(item)
+      #    tsda::db_writeTable2(token = '75CE5B94-38F1-40F6-9B7B-9B4170C8E5F6',table_name = 't_test',r_object = item,append = TRUE)  }
+      #分页上传结束 
+      
+      #示例四 更新语句
+      # sql2 = "update t_test set fage=55 where fname ='张三'  "   
+      # tsda::sql_update2(token =  '75CE5B94-38F1-40F6-9B7B-9B4170C8E5F6',sql_str = sql2)
+      
+      #更新语句结束 
+      
+      #示例五 删除语句
+      # sql3 = "delete from t_test  where fname ='张三'  "   
+      # tsda::sql_update2(token =  '75CE5B94-38F1-40F6-9B7B-9B4170C8E5F6',sql_str = sql3)     
+      
+      
+      #上传数据库END---- 
+
+      #tsui::run_download_xlsx(id = 'dl_Asone_baseInfo',data =data ,filename = '测试数据.xlsx')
+      tsui::pop_notice('更新已成功')
+         
+      })
+      
+ 
+   
+   #预览功能处理 end----
+   
+   
+   
+
+})

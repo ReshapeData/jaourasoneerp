@@ -1,0 +1,9 @@
+{
+    "path" : "~/app/00_app_template",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

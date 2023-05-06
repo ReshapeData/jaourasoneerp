@@ -1,0 +1,9 @@
+# convert date info in format 'mm/dd/yyyy'
+strDates <-"01/05/1965"
+datesA <- as.Date(strDates, "%m/%d/%Y")
+print(datesA)
+strDates <- as.character(datesA)
+print(strDates)
+    #   >
+    #     > strDates
+    #   [1] "1965-01-05" "1975-08-16"
