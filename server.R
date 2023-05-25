@@ -28,11 +28,11 @@ shinyServer(function(input, output,session) {
   #更新功能处理 begin----
   shiny::observeEvent(input$btn_Asone_updateERP,{
     # jaour test token 
-    token= 'F91CF3E3-8962-47F2-823F-C5CCAAFC66CA'
+    # token= 'F91CF3E3-8962-47F2-823F-C5CCAAFC66CA'
     
     
     # jaour real online token 
-    # token= 'C0426D23-1927-4314-8736-A74B2EF7A039'
+    token= 'C0426D23-1927-4314-8736-A74B2EF7A039'
     
     file_name =  var_file_Asone_upload()
     data <-readxl::read_excel(file_name)
